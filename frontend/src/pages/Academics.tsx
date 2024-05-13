@@ -1,14 +1,7 @@
-import { Appbar } from "../components/Appbar"
-import Card from "../components/Card"
-import { Dropdown } from "../components/Dropdown"
-import { ImageSlider } from "../components/ImageSlider"
-import { Link } from "react-router-dom"
-export const Home = () => {
-    const imageUrls = [
-        "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
-        "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
-       
-      ];
+import Card from "../components/Card";
+import { Appbar } from "../components/Appbar";
+import { Dropdown } from "../components/Dropdown";
+export const Academics = () => {
     return <div>
         <Card>
             <div className='flex flex-col justify-center'>
@@ -78,13 +71,11 @@ export const Home = () => {
                 <Dropdown size={3} ButtonName="Labs" Buttons={['List of Laboratories', 'Software','Equipment Purchased']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Dropdown size={2} ButtonName="Centers of Excellence" Buttons={['VLSI Design', 'IOT and ES']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Dropdown size={4} ButtonName="Reports" Buttons={['Techno Digest - News Letter', 'Department Reports', 'Strategic Plan', 'MoUs and MoMs']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
-                <Link to='/alumni'>
-                <button  className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">
                 Alumni
 
                 </button>
-                </Link>
                 <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">
                 IQAC
@@ -103,101 +94,50 @@ export const Home = () => {
             </div>
         </Appbar>
         <Card>
-            <ImageSlider />
-            <div className='mt-2 flex justify-start justify-between'>
-            <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                type="button">
-                <a href = 'https://www.geethanjaliinstitutions.com/engineering/img/downloads/GCET%20brochure.pdf'>Brochure</a>
-
-            </button>
-            <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                type="button">
-                <a href = 'https://www.youtube.com/watch?v=9NEnZESNoHI&t=219s'>Video Prospectus</a>
-
-            </button>
-            <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                type="button">
-                <a href = 'https://www.geethanjaliinstitutions.com/'>College Website</a>
-
-            </button>
-
-            </div>
-        </Card>
-        <Card>
-            <div>
-                <div className='text-lg font-semibold'>
-                    WELCOME TO THE DEPARTMENT OF ECE 
-
-                </div>
-                <div className='pb-2 mb-2'>
-                    Geethanjali College of Engineering and Technology (GCET) was established in the year 2005 under the aegis of Teja Educational Society constituted by a group of academicians and intellectuals. It became an autonomous institution in the year 2016. In the year 2017, the institution was accredited by NAAC with 'A' Grade and with a score of 3.36 on a scale of 4, it was the highest by any institution in AP and Telangana that went for accreditation for first time. In 2022, the institution is re-accredited by NAAC with A+ grade. 
-
-​
-
-                    Presently the college is offering Undergraduate programs in 10 disciplines namely CE, ME, ECE, EEE, IT, CSE, CSE(IoT), CSE(Cyber Security), CSE(AI&ML), CSE(Data Science) and Postgraduate programs in CSE & MBA. The college which is regarded as one of the premier institutions in and around Telangana  state has been carrying forward the legacy of quality education, guiding thousands of students in shaping their future and moulding them into responsible engineers that the country would be proud of.
-
-​
-
-                    The Department of Electronics and Communication Engineering (ECE) was started in the year2005 with an initial intake of 60 students. Right from its inception it is continuously striving to impart quality education and promoting competitive spirit among students for academic excellence. The intake was enhanced to 240 w.e.f 2013-14 academic year. The department has well equipped laboratories, good infrastructure, highly qualified and experienced faculty. A good number of research papers are published by the faculty in National/International conference proceedings/Journals. The department has signed MOUs with various organizations to provide real time training to the students. The department has successfully completed two DST sponsored research projects. It also has two ongoing research projects sponsored by DRDO. The department has successfully completed a project under MODROB Scheme sanctioned by AICTE. The department has received several patents in the field of image processing and microwave engineering. The department is extending research consultancy services to various industries such as M/s VEM Technologies Pvt. Ltd., M/S Malladi Photonics Ltd.
-                </div>
-            </div>
-        </Card>
-        <Card>
-            <div className='grid grid-cols-2 gap-4'>
-                <div className='text-lg font-semibold'>
-                    Announcements
-                </div>
-                <div className='text-lg font-semibold'>
-                    Examination Notifications
-                </div>
-                <div className='text-lg font-semibold'>
-                    Important Circulars and Notifications
-                </div>
-            </div>
-        </Card>
-        <div className={`flex justify-center w-full`}>
-            <div className='mt-4 border border-slate-400 p-4 rounded sm:max-w-3xl lg:max-w-full'>
-  
-            <div className='flex flex-col justify-center'>
-            <div className='flex justify-start justify-center'>
-                <div className='px-2'>
-                <img src="https://static.wixstatic.com/media/374af4_adaa6463205342eead87a7d02b4241a9~mv2.png/v1/fill/w_89,h_89,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/44_%20Geetanjali.png" alt=""  width="71" height="71"></img>
-
-                </div>
-                <div>
-                    <div className='font-bold text-4xl'>
-                        GEETHANJALI COLLEGE OF ENGINEERING AND TECHNOLOGY   
-                    </div>
-                    <div className='font-semibold flex justify-center'>
-                        (UGC Autonomous,  Permanently Affiliated to JNTUH, Accredited by NAAC with 'A+' grade)
-                    </div>
-                </div>
-                <div className='pt-12 font-bold text-md'>
-                EAMCET CODE - GCTC
-
-                </div>
-            </div>
-            <div className='flex justify-center font-bold text-3xl'>
-            Department of Data Science(EA)        
-
-            </div>
-            <div className='font-semibold flex justify-center pb-2'>
-            (Accredited by NBA in 2012, 2015, 2018 and 2022)
-
-            </div>
-            <div className='font-semibold flex justify-center pb-2'>
-            Cheeryala(V), Keesara(M), Medchal (Dist.), Telangana, INDIA, Pin Code-501301.
-
- 
-
-            </div>
-
-            
-            </div>
+        <div className = 'text-2xl flex justify-center font-bold'>
+            Academic and Planning
         </div>
- 
-
+        <div className = 'text-lg  font-bold'>
+            Work Load Allocation and Time Tables:  
         </div>
-
+        <ul className="list-disc ml-3">
+            <li>Allocation of workload will be completed in department at least two weeks before the conclusion of the current semester</li>
+            <li>The best teachers in the respective dept. to be allocated second year classes and then for third year classes.</li>
+            <li>The best teachers should take the first period or first two periods every day. This would automatically force students to be in college on time to a very large extent.</li>
+            <li>Two faculty members may be made available for tutorial sessions</li>
+            <li>All teachers are requested to continue their class until the next teacher arrives except the period leading to the break.</li>
+            <li>For third year students, twelve periods per week  will be kept for "Finishing School", any four days in the afternoon from Monday to Saturday</li>
+            <li>Time-table for 2nd year and 3rd classes may include two periods each per week for vocabulary classes and BEC classes respectively.</li>
+            <li>One period per week be allocated for Mentoring/Sports/Library </li>
+        </ul>
+        <div className = 'text-lg  font-bold'>
+            Administrative activities in the department:
+        </div>
+        <ul className="list-disc ml-3">
+            <li>Head of the department conducts faculty meeting at regular intervals during the semester.</li>
+            <li>Group Heads shall conduct meetings with the respective mentee faculty regularly.</li>
+        </ul>
+        <div className = 'text-lg  font-bold'>
+            Course Files, Lab Manuals, Lecture Notes and Text / Reference books.
+        </div>
+        <ul className='list-disc ml-3'>
+            <li>Course Files and lab manuals will be made available two weeks before the commencement of the semester.</li>
+            <li>The Text books / Reference books being recommended by faculty be sent to library for purchase two weeks </li>
+        </ul>
+        <div className = 'text-lg  font-bold'>
+            Lab Courses:    
+        </div>
+        <ul className='list-disc ml-3'>
+            <li>Counselors/Mentors list along with the student list will be prepared at least one week before the commencement of the semester.</li>
+        </ul>
+        <div className = 'text-lg  font-bold'>
+            Guest Lectures and industrial Visits  
+        </div>
+        <ul className='list-disc ml-3'>
+            <li>Course coordinator shall arrange Guest lectures depending upon the requirements.</li>
+            <li>Industrial visits, at least one per section per semester be arranged positively. </li>
+        </ul>
+        </Card>
     </div>
+
 }

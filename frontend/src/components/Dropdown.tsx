@@ -1,14 +1,16 @@
 // Dropdown.tsx
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 
 interface DropdownProps {
     size: number;
     ButtonName: string;
     Buttons: string[];
     Links: string[];
+    dropdownLink?: string; // Optional dropdown link
 }
 
-export const Dropdown: React.FC<DropdownProps> = ({ size, ButtonName, Buttons, Links }) => {
+export const Dropdown: React.FC<DropdownProps> = ({ size, ButtonName, Buttons, Links, dropdownLink }) => {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
 
@@ -27,9 +29,14 @@ export const Dropdown: React.FC<DropdownProps> = ({ size, ButtonName, Buttons, L
     }, []);
 
     const toggleDropdown = () => {
-        setIsOpen(!isOpen);
-        console.log('Dropdown toggled:', isOpen ? 'closed' : 'open');
-    }
+        if (dropdownLink) {
+            // Navigate to dropdown link if provided
+            window.location.href = dropdownLink;
+        } else {
+            setIsOpen(!isOpen);
+            console.log('Dropdown toggled:', isOpen ? 'closed' : 'open');
+        }
+    };
 
     return (
         <div className='relative'>
@@ -40,8 +47,8 @@ export const Dropdown: React.FC<DropdownProps> = ({ size, ButtonName, Buttons, L
             >
                 {ButtonName}
                 <svg className="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
-            </svg>
+                    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="m1 1 4 4 4-4"/>
+                </svg>
             </button>
 
             {isOpen && (
@@ -57,4 +64,4 @@ export const Dropdown: React.FC<DropdownProps> = ({ size, ButtonName, Buttons, L
             )}
         </div>
     );
-}
+};
