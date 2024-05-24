@@ -1,9 +1,8 @@
 import { Appbar } from "../components/Appbar"
 import Card from "../components/Card"
 import { Dropdown } from "../components/Dropdown"
-import { ImageSlider } from "../components/ImageSlider"
 import { Link } from "react-router-dom"
-export const Home = () => {
+export const Features = () => {
     const imageUrls = [
         "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
         "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
@@ -73,7 +72,7 @@ export const Home = () => {
                 <Dropdown size={4} ButtonName="Staff Desk" Buttons={['Faculty and Staff list', 'Roles and Responsibilities', 'Enrichment of Skills', 'Faculty as Resource Persons']}   Links={['/stafflist', '/roles', 'https://www.example.com', 'https://www.example.com']} dropdownLink="/staffdesk" />
                 <Dropdown size={12} ButtonName="Student Desk" Buttons={['Instructions', 'Student Nominal Rolls','Student Achievements','Academic Toppers','Higher Education and BEC','Training and Placement','Placements','Student Clubs','CACHE','Learning Resources','Department Library','Grievances']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Dropdown size={3} ButtonName="Research" Buttons={['Research and Consultancy Policy', 'Research Activities','Research Intiatives']}  Links={['/consultancy', '/act', '/initiatives']}></Dropdown>  
-                <Dropdown size={10} ButtonName="Academics" Buttons={['Regulations and Syllabus', 'Academic Calenders','Academic Activities Carried out','Industry-institute interaction','Major Products','Mini Projects','Internships','Industrial Visits','Professional Bodies','TechExpo']}  Links={['/syllabus', 'https://www.example.com', 'https://www.example.com', 'https://www.example.com']} dropdownLink="/academics" ></Dropdown>  
+                <Dropdown size={10} ButtonName="Academics" Buttons={['Regulations and Syllabus', 'Academic Calenders','Academic Activities Carried out','Industry-institute interaction','Major Products','Mini Projects','Internships','Industrial Visits','Professional Bodies','TechExpo']}  Links={['https://www.example.com', 'https://www.example.com', 'https://www.example.com', 'https://www.example.com']} dropdownLink="/academics" ></Dropdown>  
                 <Dropdown size={7} ButtonName="TLP" Buttons={['Work Load and Additional duties', 'Time tables', 'Result Analysis', 'Innovations in Teaching', 'Project Based Learning', 'Value Added Courses','Specialized Groups']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} dropdownLink="/tlp"></Dropdown>  
                 <Dropdown size={3} ButtonName="Labs" Buttons={['List of Laboratories', 'Software','Equipment Purchased']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Dropdown size={2} ButtonName="Centers of Excellence" Buttons={['VLSI Design', 'IOT and ES']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
@@ -106,56 +105,14 @@ export const Home = () => {
             </div>
         </Appbar>
         <Card>
-            <ImageSlider />
-            <div className='mt-2 flex justify-start justify-between'>
-            <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                type="button">
-                <a href = 'https://www.geethanjaliinstitutions.com/engineering/img/downloads/GCET%20brochure.pdf'>Brochure</a>
+            <div className='pb-2 text-2xl font-bold text-center px-3'>Salient Features of the Department</div>
+            <div className='text-justify'>
+                B.Tech (Computer Science and Engineering) Emerging Areas are established with four programs, namely, - B.Tech. "Computer Science and Engineering - Artificial Intelligence and Machine Learning" (CSE-AI&ML), B.Tech. "Computer Science and Engineering - Data Science" (CSE-DS), B.Tech. "Computer Science and Engineering - Cyber Security" (CSE-CS) and B.Tech. "Computer Science and Engineering - Internet of Things" (CSE-IoT), each with an intake of 60 in the academic year 2020-21. Subsequently, intake in B.Tech. (CSE-AI&ML) are increased to 180 in the academic year 2021-22, 240 in the academic year 2023-24, intake in B.Tech. (CSE-CS) are increased to 180 in the academic year 2023-24, intake in B.Tech. (CSE-DS) are increased to 180 in the academic year 2023-24.
+                The Department is chaired by Dr. L. Venkateswarlu, he has a total experience of 26 years in Teaching and Research, an accomplished teacher and researcher demonstrating consistent success. He is also an able administrator and communicates effectively. He has good organizational and negotiation skills. Establishes reachable goals, meticulously plans to ensure participation by all and reaches consensus to attain desirable dreams.
+                Department has 3 Professors, 18 Associate Professors, and 45 Assistant Professors. Among these, 10 doctorates in the department. The department has a supporting staff to assist and maintain the computer laboratories.
+                There are 2 Professors, 2 Associate Professors, and 11 Assistant Professors and 15 doctorates in the department. The department has a Programmer and 5 System Administrators to assist and maintain the computer laboratories. All the faculty members are encouraged to participate in Faculty Development Programmes, Conferences, Workshops, Publication of Research Papers and active involvement in R & D activity.
 
-            </button>
-            <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                type="button">
-                <a href = 'https://www.youtube.com/watch?v=9NEnZESNoHI&t=219s'>Video Prospectus</a>
 
-            </button>
-            <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                type="button">
-                <a href = 'https://www.geethanjaliinstitutions.com/'>College Website</a>
-
-            </button>
-
-            </div>
-        </Card>
-        <Card>
-            <div>
-                <div className='text-lg font-semibold'>
-                    WELCOME TO THE DEPARTMENT OF ECE 
-
-                </div>
-                <div className='pb-2 mb-2'>
-                    Geethanjali College of Engineering and Technology (GCET) was established in the year 2005 under the aegis of Teja Educational Society constituted by a group of academicians and intellectuals. It became an autonomous institution in the year 2016. In the year 2017, the institution was accredited by NAAC with 'A' Grade and with a score of 3.36 on a scale of 4, it was the highest by any institution in AP and Telangana that went for accreditation for first time. In 2022, the institution is re-accredited by NAAC with A+ grade. 
-
-​
-
-                    Presently the college is offering Undergraduate programs in 10 disciplines namely CE, ME, ECE, EEE, IT, CSE, CSE(IoT), CSE(Cyber Security), CSE(AI&ML), CSE(Data Science) and Postgraduate programs in CSE & MBA. The college which is regarded as one of the premier institutions in and around Telangana  state has been carrying forward the legacy of quality education, guiding thousands of students in shaping their future and moulding them into responsible engineers that the country would be proud of.
-
-​
-
-                    The Department of Electronics and Communication Engineering (ECE) was started in the year2005 with an initial intake of 60 students. Right from its inception it is continuously striving to impart quality education and promoting competitive spirit among students for academic excellence. The intake was enhanced to 240 w.e.f 2013-14 academic year. The department has well equipped laboratories, good infrastructure, highly qualified and experienced faculty. A good number of research papers are published by the faculty in National/International conference proceedings/Journals. The department has signed MOUs with various organizations to provide real time training to the students. The department has successfully completed two DST sponsored research projects. It also has two ongoing research projects sponsored by DRDO. The department has successfully completed a project under MODROB Scheme sanctioned by AICTE. The department has received several patents in the field of image processing and microwave engineering. The department is extending research consultancy services to various industries such as M/s VEM Technologies Pvt. Ltd., M/S Malladi Photonics Ltd.
-                </div>
-            </div>
-        </Card>
-        <Card>
-            <div className='grid grid-cols-2 gap-4'>
-                <div className='text-lg font-semibold'>
-                    Announcements
-                </div>
-                <div className='text-lg font-semibold'>
-                    Examination Notifications
-                </div>
-                <div className='text-lg font-semibold'>
-                    Important Circulars and Notifications
-                </div>
             </div>
         </Card>
         <div className={`flex justify-center w-full`}>
@@ -201,6 +158,5 @@ export const Home = () => {
  
 
         </div>
-
-    </div>
+        </div>
 }

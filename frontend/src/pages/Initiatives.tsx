@@ -1,9 +1,10 @@
+
 import { Appbar } from "../components/Appbar"
 import Card from "../components/Card"
 import { Dropdown } from "../components/Dropdown"
 import { ImageSlider } from "../components/ImageSlider"
 import { Link } from "react-router-dom"
-export const Home = () => {
+export const Initiatives = () => {
     const imageUrls = [
         "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
         "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
@@ -69,11 +70,11 @@ export const Home = () => {
         <Appbar>
             <div className='flex justify-start flex-wrap'>
                 
-                <Dropdown size={6} ButtonName="HOME" Buttons={['Vision and Mission', 'PEOs,POs and PSOs', 'Salient Features of the Department', 'Messages', 'Board of Studies', 'Approvals and Recognitions']}  Links={['/vision', '/peo', '/features', 'https://www.example.com','https://www.example.com','https://www.example.com']} dropdownLink="/" />
+                <Dropdown size={6} ButtonName="HOME" Buttons={['Vision and Mission', 'PEOs,POs and PSOs', 'Salient Features of the Department', 'Messages', 'Board of Studies', 'Approvals and Recognitions']}  Links={['/vision', '/peo', 'https://www.example.com', 'https://www.example.com','https://www.example.com','https://www.example.com']} dropdownLink="/" />
                 <Dropdown size={4} ButtonName="Staff Desk" Buttons={['Faculty and Staff list', 'Roles and Responsibilities', 'Enrichment of Skills', 'Faculty as Resource Persons']}   Links={['/stafflist', '/roles', 'https://www.example.com', 'https://www.example.com']} dropdownLink="/staffdesk" />
                 <Dropdown size={12} ButtonName="Student Desk" Buttons={['Instructions', 'Student Nominal Rolls','Student Achievements','Academic Toppers','Higher Education and BEC','Training and Placement','Placements','Student Clubs','CACHE','Learning Resources','Department Library','Grievances']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Dropdown size={3} ButtonName="Research" Buttons={['Research and Consultancy Policy', 'Research Activities','Research Intiatives']}  Links={['/consultancy', '/act', '/initiatives']}></Dropdown>  
-                <Dropdown size={10} ButtonName="Academics" Buttons={['Regulations and Syllabus', 'Academic Calenders','Academic Activities Carried out','Industry-institute interaction','Major Products','Mini Projects','Internships','Industrial Visits','Professional Bodies','TechExpo']}  Links={['/syllabus', 'https://www.example.com', 'https://www.example.com', 'https://www.example.com']} dropdownLink="/academics" ></Dropdown>  
+                <Dropdown size={10} ButtonName="Academics" Buttons={['Regulations and Syllabus', 'Academic Calenders','Academic Activities Carried out','Industry-institute interaction','Major Products','Mini Projects','Internships','Industrial Visits','Professional Bodies','TechExpo']}  Links={['https://www.example.com', 'https://www.example.com', 'https://www.example.com', 'https://www.example.com']} dropdownLink="/academics" ></Dropdown>  
                 <Dropdown size={7} ButtonName="TLP" Buttons={['Work Load and Additional duties', 'Time tables', 'Result Analysis', 'Innovations in Teaching', 'Project Based Learning', 'Value Added Courses','Specialized Groups']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} dropdownLink="/tlp"></Dropdown>  
                 <Dropdown size={3} ButtonName="Labs" Buttons={['List of Laboratories', 'Software','Equipment Purchased']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Dropdown size={2} ButtonName="Centers of Excellence" Buttons={['VLSI Design', 'IOT and ES']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
@@ -106,57 +107,26 @@ export const Home = () => {
             </div>
         </Appbar>
         <Card>
-            <ImageSlider />
-            <div className='mt-2 flex justify-start justify-between'>
-            <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+             <div className='pb-2 text-2xl font-bold text-center px-3'>Research Proposals Submitted for Funding</div>
+             <div className='flex justify-center'>
+             <a href='https://docs.google.com/spreadsheets/d/1Zd-28Ta83TmJ6RTEWrYKHrWCPEKXWXFanCqMSgCJFWQ/edit'><button  className="py-3  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">
-                <a href = 'https://www.geethanjaliinstitutions.com/engineering/img/downloads/GCET%20brochure.pdf'>Brochure</a>
+                Click here for details
 
-            </button>
-            <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                type="button">
-                <a href = 'https://www.youtube.com/watch?v=9NEnZESNoHI&t=219s'>Video Prospectus</a>
-
-            </button>
-            <button className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                type="button">
-                <a href = 'https://www.geethanjaliinstitutions.com/'>College Website</a>
-
-            </button>
-
-            </div>
+                </button>
+                </a>
+                </div>
         </Card>
         <Card>
-            <div>
-                <div className='text-lg font-semibold'>
-                    WELCOME TO THE DEPARTMENT OF ECE 
+             <div className='pb-2 text-2xl font-bold text-centerb px-20'>Faculty Peer Learning Sessions</div>
+             <div className='flex justify-center'>
+             <a href='https://docs.google.com/spreadsheets/d/1Zd-28Ta83TmJ6RTEWrYKHrWCPEKXWXFanCqMSgCJFWQ/edit'><button  className="py-3  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                type="button">
+                Click here for details
 
+                </button>
+                </a>
                 </div>
-                <div className='pb-2 mb-2'>
-                    Geethanjali College of Engineering and Technology (GCET) was established in the year 2005 under the aegis of Teja Educational Society constituted by a group of academicians and intellectuals. It became an autonomous institution in the year 2016. In the year 2017, the institution was accredited by NAAC with 'A' Grade and with a score of 3.36 on a scale of 4, it was the highest by any institution in AP and Telangana that went for accreditation for first time. In 2022, the institution is re-accredited by NAAC with A+ grade. 
-
-​
-
-                    Presently the college is offering Undergraduate programs in 10 disciplines namely CE, ME, ECE, EEE, IT, CSE, CSE(IoT), CSE(Cyber Security), CSE(AI&ML), CSE(Data Science) and Postgraduate programs in CSE & MBA. The college which is regarded as one of the premier institutions in and around Telangana  state has been carrying forward the legacy of quality education, guiding thousands of students in shaping their future and moulding them into responsible engineers that the country would be proud of.
-
-​
-
-                    The Department of Electronics and Communication Engineering (ECE) was started in the year2005 with an initial intake of 60 students. Right from its inception it is continuously striving to impart quality education and promoting competitive spirit among students for academic excellence. The intake was enhanced to 240 w.e.f 2013-14 academic year. The department has well equipped laboratories, good infrastructure, highly qualified and experienced faculty. A good number of research papers are published by the faculty in National/International conference proceedings/Journals. The department has signed MOUs with various organizations to provide real time training to the students. The department has successfully completed two DST sponsored research projects. It also has two ongoing research projects sponsored by DRDO. The department has successfully completed a project under MODROB Scheme sanctioned by AICTE. The department has received several patents in the field of image processing and microwave engineering. The department is extending research consultancy services to various industries such as M/s VEM Technologies Pvt. Ltd., M/S Malladi Photonics Ltd.
-                </div>
-            </div>
-        </Card>
-        <Card>
-            <div className='grid grid-cols-2 gap-4'>
-                <div className='text-lg font-semibold'>
-                    Announcements
-                </div>
-                <div className='text-lg font-semibold'>
-                    Examination Notifications
-                </div>
-                <div className='text-lg font-semibold'>
-                    Important Circulars and Notifications
-                </div>
-            </div>
         </Card>
         <div className={`flex justify-center w-full`}>
             <div className='mt-4 border border-slate-400 p-4 rounded sm:max-w-3xl lg:max-w-full'>
@@ -201,6 +171,5 @@ export const Home = () => {
  
 
         </div>
-
-    </div>
+        </div>
 }

@@ -9,6 +9,14 @@ import { Alumni } from './pages/Alumni'
 import { IQAC } from './pages/IQAC'
 import { CentralFacilities } from './pages/CentralFacilities'
 import { Roles } from './pages/Roles'
+import { Vision } from './pages/Vision'
+import { Stafflist } from './pages/Stafflist'
+import { Consultancy } from './pages/Consultancy'
+import { Act } from './pages/Activities'
+import { Initiatives } from './pages/Initiatives'
+import { Features } from './pages/Features'
+import { Syllabus } from './pages/Syllabus'
+
 function App() {
 
   return (
@@ -24,6 +32,16 @@ function App() {
         <Route path='/iqac' element={<IQAC />} />
         <Route path='/centralfacilities' element={<CentralFacilities />} />
         <Route path='/roles' element={<Roles />} />
+        <Route path='/vision' element={<Vision />} />
+        <Route path='/stafflist' element={<Stafflist />} />
+        <Route path='/consultancy' element={<Consultancy />} />
+        <Route path='/act' element={<Act/>} />
+        <Route path='/initiatives' element={<Initiatives/>} />
+        <Route path='/features' element={<Features/>} />
+        <Route path='/syllabus' element={<Syllabus/>} />
+
+
+
 
 
 
