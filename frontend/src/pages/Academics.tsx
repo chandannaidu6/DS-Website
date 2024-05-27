@@ -63,17 +63,17 @@ export const Academics = () => {
         <Appbar>
             <div className='flex justify-start flex-wrap'>
                 
-                <Dropdown size={6} ButtonName="HOME" Buttons={['Vision and Mission', 'PEOs,POs and PSOs', 'Salient Features of the Department', 'Messages', 'Board of Studies', 'Approvals and Recognitions']}  Links={['https://www.example.com', '/peo', 'https://www.example.com', 'https://www.example.com','https://www.example.com','https://www.example.com']} dropdownLink="/" />
-                <Dropdown size={4} ButtonName="Staff Desk" Buttons={['Faculty and Staff list', 'Roles and Responsibilities', 'Enrichment of Skills', 'Faculty as Resource Persons']}   Links={['/staffdesk', 'https://www.example.com', 'https://www.example.com', 'https://www.example.com','https://www.example.com']} dropdownLink="/staffdesk" />
-                <Dropdown size={12} ButtonName="Student Desk" Buttons={['Instructions', 'Student Nominal Rolls','Student Achievements','Academic Toppers','Higher Education and BEC','Training and Placement','Placements','Student Clubs','CACHE','Learning Resources','Department Library','Grievances']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
-                <Dropdown size={3} ButtonName="Research" Buttons={['Research and Consultancy Policy', 'Research Activities','Research Intiatives']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
-                <Dropdown size={10} ButtonName="Academics" Buttons={['Regulations and Syllabus', 'Academic Calenders','Academic Activities Carried out','Industry-institute interaction','Major Products','Mini Projects','Internships','Industrial Visits','Professional Bodies','TechExpo']}  Links={['https://www.example.com', 'https://www.example.com', 'https://www.example.com', 'https://www.example.com']} dropdownLink="/academics" ></Dropdown>  
+                <Dropdown size={6} ButtonName="HOME" Buttons={['Vision and Mission', 'PEOs,POs and PSOs', 'Salient Features of the Department', 'Messages', 'Board of Studies', 'Approvals and Recognitions']}  Links={['/vision', '/peo', '/features', 'https://www.example.com','https://www.example.com','https://www.example.com']} dropdownLink="/" />
+                <Dropdown size={4} ButtonName="Staff Desk" Buttons={['Faculty and Staff list', 'Roles and Responsibilities', 'Enrichment of Skills', 'Faculty as Resource Persons']}   Links={['/stafflist', '/roles', 'https://www.example.com', 'https://www.example.com']} dropdownLink="/staffdesk" />
+                <Dropdown size={12} ButtonName="Student Desk" Buttons={['Instructions', 'Student Nominal Rolls','Student Achievements','Academic Toppers','Higher Education and BEC','Training and Placement','Placements','Student Clubs','CACHE','Learning Resources','Department Library','Grievances']}  Links={['/instructions', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
+                <Dropdown size={3} ButtonName="Research" Buttons={['Research and Consultancy Policy', 'Research Activities','Research Intiatives']}  Links={['/consultancy', '/act', '/initiatives']}></Dropdown>  
+                <Dropdown size={10} ButtonName="Academics" Buttons={['Regulations and Syllabus', 'Academic Calenders','Academic Activities Carried out','Industry-institute interaction','Major Products','Mini Projects','Internships','Industrial Visits','Professional Bodies','TechExpo']}  Links={['/syllabus', 'https://www.example.com', 'https://www.example.com', 'https://www.example.com','https://www.example.com','https://www.example.com','https://www.example.com','/industrial','https://www.example.com','https://www.example.com']} dropdownLink="/academics" ></Dropdown>  
                 <Dropdown size={7} ButtonName="TLP" Buttons={['Work Load and Additional duties', 'Time tables', 'Result Analysis', 'Innovations in Teaching', 'Project Based Learning', 'Value Added Courses','Specialized Groups']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} dropdownLink="/tlp"></Dropdown>  
                 <Dropdown size={3} ButtonName="Labs" Buttons={['List of Laboratories', 'Software','Equipment Purchased']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Dropdown size={2} ButtonName="Centers of Excellence" Buttons={['VLSI Design', 'IOT and ES']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Dropdown size={4} ButtonName="Reports" Buttons={['Techno Digest - News Letter', 'Department Reports', 'Strategic Plan', 'MoUs and MoMs']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Link to='/alumni'>
-                <button  className="py-3 border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                <button  className="py-3  text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">
                 Alumni
 
@@ -88,14 +88,16 @@ export const Academics = () => {
                 </Link>
                 <Dropdown size={1} ButtonName="Formats" Buttons={['Principal\'s Zone']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
 
-                <Dropdown size={1} ButtonName="Central Facilities" Buttons={['NSS']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} dropdownLink="/centralfacilities"></Dropdown>  
+                <Dropdown size={1} ButtonName="Central Facilities" Buttons={['NSS']}  Links={['/nss']} dropdownLink="/centralfacilities"></Dropdown>  
+                <Link to='/attainments'>
                 <button className="py-3 border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                 type="button">
                 CO-PO Attainments
 
                 </button>
+                </Link>
 
-                <Dropdown size={6} ButtonName="More" Buttons={['Curriculum Design', 'Contact us', 'NBA Documents - 2022', 'Events of the Dept', 'Gallery', 'New Item']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
+                <Dropdown size={6} ButtonName="More" Buttons={['Curriculum Design', 'Contact us', 'NBA Documents - 2022', 'Events of the Dept', 'Gallery', 'New Item']}  Links={['www.google.com', '/contact', 'www.google.com', 'www.google.com','www.google.com','www.google.com']} ></Dropdown>  
             
             </div>
         </Appbar>
@@ -103,10 +105,10 @@ export const Academics = () => {
         <div className = 'text-2xl flex justify-center font-bold'>
             Academic and Planning
         </div>
-        <div className = 'text-lg  font-bold'>
+        <div className = 'text-xl  font-bold'>
             Work Load Allocation and Time Tables:  
         </div>
-        <ul className="list-disc ml-3">
+        <ul className="text-lg list-disc ml-3">
             <li>Allocation of workload will be completed in department at least two weeks before the conclusion of the current semester</li>
             <li>The best teachers in the respective dept. to be allocated second year classes and then for third year classes.</li>
             <li>The best teachers should take the first period or first two periods every day. This would automatically force students to be in college on time to a very large extent.</li>
@@ -116,34 +118,77 @@ export const Academics = () => {
             <li>Time-table for 2nd year and 3rd classes may include two periods each per week for vocabulary classes and BEC classes respectively.</li>
             <li>One period per week be allocated for Mentoring/Sports/Library </li>
         </ul>
-        <div className = 'text-lg  font-bold'>
+        <div className = 'pt-2 text-xl  font-bold'>
             Administrative activities in the department:
         </div>
-        <ul className="list-disc ml-3">
+        <ul className="text-lg list-disc ml-3">
             <li>Head of the department conducts faculty meeting at regular intervals during the semester.</li>
             <li>Group Heads shall conduct meetings with the respective mentee faculty regularly.</li>
         </ul>
-        <div className = 'text-lg  font-bold'>
+        <div className = 'pt-2 text-xl  font-bold'>
             Course Files, Lab Manuals, Lecture Notes and Text / Reference books.
         </div>
-        <ul className='list-disc ml-3'>
+        <ul className='list-disc ml-3 text-lg'>
             <li>Course Files and lab manuals will be made available two weeks before the commencement of the semester.</li>
             <li>The Text books / Reference books being recommended by faculty be sent to library for purchase two weeks </li>
         </ul>
-        <div className = 'text-lg  font-bold'>
+        <div className = 'text-xl pt-2  font-bold'>
             Lab Courses:    
         </div>
-        <ul className='list-disc ml-3'>
+        <ul className='list-disc ml-3 text-lg'>
             <li>Counselors/Mentors list along with the student list will be prepared at least one week before the commencement of the semester.</li>
         </ul>
-        <div className = 'text-lg  font-bold'>
+        <div className = 'text-xl  font-bold'>
             Guest Lectures and industrial Visits  
         </div>
-        <ul className='list-disc ml-3'>
+        <ul className='list-disc ml-3 text-lg'>
             <li>Course coordinator shall arrange Guest lectures depending upon the requirements.</li>
             <li>Industrial visits, at least one per section per semester be arranged positively. </li>
         </ul>
         </Card>
+        <div className={`flex justify-center w-full`}>
+            <div className='mt-4 border border-slate-400 p-4 rounded sm:max-w-3xl lg:max-w-full'>
+  
+            <div className='flex flex-col justify-center'>
+            <div className='flex justify-start justify-center'>
+                <div className='px-2'>
+                <img src="https://static.wixstatic.com/media/374af4_adaa6463205342eead87a7d02b4241a9~mv2.png/v1/fill/w_89,h_89,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/44_%20Geetanjali.png" alt=""  width="71" height="71"></img>
+
+                </div>
+                <div>
+                    <div className='font-bold text-4xl'>
+                        GEETHANJALI COLLEGE OF ENGINEERING AND TECHNOLOGY   
+                    </div>
+                    <div className='font-semibold flex justify-center'>
+                        (UGC Autonomous,  Permanently Affiliated to JNTUH, Accredited by NAAC with 'A+' grade)
+                    </div>
+                </div>
+                <div className='pt-12 font-bold text-md'>
+                EAMCET CODE - GCTC
+
+                </div>
+            </div>
+            <div className='flex justify-center font-bold text-3xl'>
+            Department of Data Science(EA)        
+
+            </div>
+            <div className='font-semibold flex justify-center pb-2'>
+            (Accredited by NBA in 2012, 2015, 2018 and 2022)
+
+            </div>
+            <div className='font-semibold flex justify-center pb-2'>
+            Cheeryala(V), Keesara(M), Medchal (Dist.), Telangana, INDIA, Pin Code-501301.
+
+ 
+
+            </div>
+
+            
+            </div>
+        </div>
+ 
+
+        </div>
     </div>
 
 }

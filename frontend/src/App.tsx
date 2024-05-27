@@ -16,6 +16,11 @@ import { Act } from './pages/Activities'
 import { Initiatives } from './pages/Initiatives'
 import { Features } from './pages/Features'
 import { Syllabus } from './pages/Syllabus'
+import { Industrial } from './pages/Industrial'
+import { NSS } from './pages/NSS'
+import { Attainments } from './pages/Attainments'
+import { Instructions } from './pages/Instructions'
+import { Contact } from './pages/Contact'
 
 function App() {
 
@@ -39,9 +44,12 @@ function App() {
         <Route path='/initiatives' element={<Initiatives/>} />
         <Route path='/features' element={<Features/>} />
         <Route path='/syllabus' element={<Syllabus/>} />
-
-
-
+        <Route path='/industrial' element={<Industrial />}/>
+        
+        <Route path='/nss' element={<NSS />}/>
+        <Route path='/attainments' element={<Attainments />}/>
+        <Route path='/instructions' element={<Instructions />}/>
+        <Route path='/contact'element={<Contact />}/>
 
 
 

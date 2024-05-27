@@ -1,8 +1,9 @@
 import { Appbar } from "../components/Appbar"
 import Card from "../components/Card"
 import { Dropdown } from "../components/Dropdown"
+import { ImageSlider } from "../components/ImageSlider"
 import { Link } from "react-router-dom"
-export const Features = () => {
+export const Contact = () => {
     const imageUrls = [
         "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
         "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
@@ -107,14 +108,80 @@ export const Features = () => {
             </div>
         </Appbar>
         <Card>
-            <div className='pb-2 text-2xl font-bold text-center px-3'>Salient Features of the Department</div>
-            <div className='text-justify text-lg'>
-                B.Tech (Computer Science and Engineering) Emerging Areas are established with four programs, namely, - B.Tech. "Computer Science and Engineering - Artificial Intelligence and Machine Learning" (CSE-AI&ML), B.Tech. "Computer Science and Engineering - Data Science" (CSE-DS), B.Tech. "Computer Science and Engineering - Cyber Security" (CSE-CS) and B.Tech. "Computer Science and Engineering - Internet of Things" (CSE-IoT), each with an intake of 60 in the academic year 2020-21. Subsequently, intake in B.Tech. (CSE-AI&ML) are increased to 180 in the academic year 2021-22, 240 in the academic year 2023-24, intake in B.Tech. (CSE-CS) are increased to 180 in the academic year 2023-24, intake in B.Tech. (CSE-DS) are increased to 180 in the academic year 2023-24.
-                The Department is chaired by Dr. L. Venkateswarlu, he has a total experience of 26 years in Teaching and Research, an accomplished teacher and researcher demonstrating consistent success. He is also an able administrator and communicates effectively. He has good organizational and negotiation skills. Establishes reachable goals, meticulously plans to ensure participation by all and reaches consensus to attain desirable dreams.
-                Department has 3 Professors, 18 Associate Professors, and 45 Assistant Professors. Among these, 10 doctorates in the department. The department has a supporting staff to assist and maintain the computer laboratories.
-                There are 2 Professors, 2 Associate Professors, and 11 Assistant Professors and 15 doctorates in the department. The department has a Programmer and 5 System Administrators to assist and maintain the computer laboratories. All the faculty members are encouraged to participate in Faculty Development Programmes, Conferences, Workshops, Publication of Research Papers and active involvement in R & D activity.
+            <div>
+                <div className="grid grid-cols-2 gap-4">
+                    <div>
+                        <div className='border-b pb-2 text-2xl font-bold text-center'>CONTACT US</div>
+                        <div className='pt-2 text-lg font-semibold'>ADDRESS</div>
+                        <div className='text-lg'>
+                            
+                            Geethanjali College of Engineering and Technology
+                            Cheeryala(V), Keesara(M), Medchal Dist.
+                            Telangana, INDIA, Pin Code-501301.
+                        </div>
+                        <div className='pt-2 text-lg font-semibold'>Website:</div>
+                        <div>
+                        <a
+                            href="www.geethanjaliinstitutions.com/engineering"
+                            className="text-lg block w-full h-full"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            www.geethanjaliinstitutions.com/engineering
+                        </a>
+                        </div>
+                        <div className='pb-4 pt-4 text-lg text-center font-semibold'>IMPORTANT PHONE NUMBERS</div>
+                        <div className="text-xl">
+                            Principal's Office:                9182058187              
 
 
+                        </div>
+                        <div className="text-xl">
+                            Head, Dept. of ECE:             9642613923
+                        </div>
+                        <div className="text-xl">
+                            Academic Section:              9182058194
+                        </div>
+                        <div className="text-xl">
+                            Account Section:                 9182058192
+                        </div>
+                        <div className="text-xl">
+                            Transport Section:              9182058186
+                        </div>
+                        <div className='text-xl flex'>
+                            <div>
+                            For website related information -
+                            </div>
+                            <div>
+                            <a
+                            href="web.gcetece@gmail.com"
+                            className="text-lg block w-full h-full"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            web.gcetece@gmail.com
+                        </a>
+                                
+                            </div>
+                        </div>
+
+                    </div>
+                    <div>
+                        <div className='border-b pb-2 text-2xl font-bold text-center'>ROUTE MAP</div>
+                        <div id="comp-kc0b6bps" className="comp-kc0b6bps _xg6_p w-full h-96">
+                        <div className="SMuTIa w-full h-full">
+                            <iframe
+                            className="wuksD5 w-full h-full"
+                            title="Embedded Content"
+                            name="htmlComp-iframe"
+                            data-src=""
+                            src="https://www-gcetece-org.filesusr.com/html/374af4_4727d6c83b888ee1d9e72e1e589feb34.html"
+                            ></iframe>
+                        </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </Card>
         <div className={`flex justify-center w-full`}>

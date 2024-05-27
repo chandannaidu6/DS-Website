@@ -1,13 +1,10 @@
 import { Appbar } from "../components/Appbar"
 import Card from "../components/Card"
 import { Dropdown } from "../components/Dropdown"
+import { ImageSlider } from "../components/ImageSlider"
 import { Link } from "react-router-dom"
-export const Features = () => {
-    const imageUrls = [
-        "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
-        "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
-       
-      ];
+export const Instructions = () => {
+
     return <div>
         <Card>
             <div className='flex flex-col justify-center'>
@@ -107,15 +104,65 @@ export const Features = () => {
             </div>
         </Appbar>
         <Card>
-            <div className='pb-2 text-2xl font-bold text-center px-3'>Salient Features of the Department</div>
-            <div className='text-justify text-lg'>
-                B.Tech (Computer Science and Engineering) Emerging Areas are established with four programs, namely, - B.Tech. "Computer Science and Engineering - Artificial Intelligence and Machine Learning" (CSE-AI&ML), B.Tech. "Computer Science and Engineering - Data Science" (CSE-DS), B.Tech. "Computer Science and Engineering - Cyber Security" (CSE-CS) and B.Tech. "Computer Science and Engineering - Internet of Things" (CSE-IoT), each with an intake of 60 in the academic year 2020-21. Subsequently, intake in B.Tech. (CSE-AI&ML) are increased to 180 in the academic year 2021-22, 240 in the academic year 2023-24, intake in B.Tech. (CSE-CS) are increased to 180 in the academic year 2023-24, intake in B.Tech. (CSE-DS) are increased to 180 in the academic year 2023-24.
-                The Department is chaired by Dr. L. Venkateswarlu, he has a total experience of 26 years in Teaching and Research, an accomplished teacher and researcher demonstrating consistent success. He is also an able administrator and communicates effectively. He has good organizational and negotiation skills. Establishes reachable goals, meticulously plans to ensure participation by all and reaches consensus to attain desirable dreams.
-                Department has 3 Professors, 18 Associate Professors, and 45 Assistant Professors. Among these, 10 doctorates in the department. The department has a supporting staff to assist and maintain the computer laboratories.
-                There are 2 Professors, 2 Associate Professors, and 11 Assistant Professors and 15 doctorates in the department. The department has a Programmer and 5 System Administrators to assist and maintain the computer laboratories. All the faculty members are encouraged to participate in Faculty Development Programmes, Conferences, Workshops, Publication of Research Papers and active involvement in R & D activity.
-
+            <div className='text-center font-bold text-2xl'>
+                <div>
+                    Geethanjali College of Engineering and Technology
+                </div>
+                <div>
+                    (UGC Autonomous, Permanently Affiliated to JNTUH and Accredited by NAAC with ‘A’)
+                </div>
+                <div>
+                    Department of ECE
+                </div>
+                <div>
+                    (NBA Accredited)
+                </div>
+            </div>
+            <div className="text-center text-xl font-semibold">
+                Instructions & Guidelines for Students
+            </div>
+            <div className="pt-10 text-xl font-semibold">
+                Instructions:
+            </div>
+            <div className="text-lg">
+                Students are required to follow the under-mentioned instructions and guidelines:
+                <ol className="list-decimal pl-5 text-justify">
+                    <li>Students should not involve in any Ragging activities or in any other activity that might tarnish the image of the institution. Any indulgence in these activities will be viewed seriously.</li>
+                    <li>Regular attendance is mandatory. No student is expected to be absent for the classes without prior written permission from the HoD. In case of emergencies, a leave request has to be made to HoD or to the Counselor over phone and, in such cases, the absentee should bring a leave letter counter signed by the parent on the first day of his/her arrival to the college after availing the emergency leave.</li>
+                    <li>Students should strictly follow the college timings and should be punctual. Students should not leave the campus during working hours without the written permission from HoD.</li>
+                    <li>Attendance in the Department/College level programmes like Workshops, Guest lectures etc. is mandatory.</li>
+                    <li>Students are required to attend all the placement training programmes conducted in the campus without fail and participate in the related events actively</li>
+                    <li>Usage of cell phones, iPods and any other electronic gadgets except Calculators and Laptops, is strictly prohibited during the class. In case of violation, the same will be confiscated and will not be returned till the parents of the students submit an undertaking that such incidents will not be repeated.</li>
+                    <li>Students must maintain absolute discipline in the class rooms, laboratories and in all the common areas. Students are strictly instructed not to loiter in the corridors and common areas and not to spend time in the canteen other than during the time reserved for them.</li>
+                    <li>Students shall not indulge in any sort of malpractice during the examinations/tests. If they do so, they are liable to be punished as per the autonomous regulations.</li>
+                    <li>Students should wear the Identity card as long as they are in the campus and in the college buses. Without Identity card, they are not allowed into the campus including the common areas like canteen, library etc.</li>
+                    <li>In case of loss of Identity card, student has to submit a letter to the HoD through class teacher requesting for a duplicate Identity card on the same day.</li>
+                    <li>Students should follow the dress code in letter and spirit as specified. They are prohibited from wearing T-shirts, Jeans & other fancy design dresses. Boys should come in formals with tucked-in shirt and shoes. The girls should wear Chudidhars.</li>
+                    <li>Students are required to attend all the Laboratory classes in the proper uniform along with the updated record book.</li>
+                    <li>The students should understand that the property of the college is precious and is provided to fulfill their own needs. Hence all the furniture and other facilities are to be utilized carefully and should not deform or spoil them by scribbling on the desks/boards/walls/in the library books and seats in the buses.</li>
+                    <li>Students are exhorted to keep the campus clean and green. They should not throw litter here and there. Students should develop the habit of putting all the unwanted things such as waste papers, used pens etc., in the dustbin which has a lid.</li>
+                    <li>Students should abide by all the rules and regulations amended by the college/ department from time to time.</li>                
+                </ol>
 
             </div>
+            <div className="text-lg">
+            <div className="pt-10 text-xl font-semibold">
+                Guidelines:
+            </div>
+                <ol className="list-decimal pl-5 text-justify">
+                    <li>Students are advised to concentrate in their holistic development during their tenure in the college. They are profusely encouraged to make use of the Library, laboratories, R&D lab and Internet facilities for carrying their projects/improving their technical and academic skills.</li>
+                    <li>Students are encouraged to actively interact with the faculty members in the pursuit of achieving excellence in academics. They are advised to meet their faculty mentors and take suggestions from them.</li>
+                    <li>Always occupy the front seats available in the class room. Never leave the front seats vacant and occupy the back seats. It is desirable that only 2 students sit in a bench whenever and wherever it is possible.</li>
+                    <li>Students should participate in all the technical seminars and symposiums that they come across and present technical papers. For this purpose, they can approach the Professors, Mentors or any other faculty members for guidance.</li>
+                    <li>Students are advised to improve their both oral and written communication skills as these skills are mandatory for getting them a placement and for further progress in their career. They may resolve to converse only in English in the class room initially and later in the campus. This practice of speaking only in English with the friends and faculty, will definitely result in improved oral communication skills. They are advised to read English news paper daily to improve the reading comprehension.</li>
+                    <li>Students should carry out as many technical projects as they can during their study in the college which helps them to assimilate the concepts of a course in a better way.</li>
+                    <li>Students are advised to make use of the college bus facility to attend the college. In case of unavoidable circumstances only, they can use a two-wheeler. However, driving a two wheeler with more than one pillion rider is risky and should be avoided. (Triple riding is an offence).</li>
+                    <li>Students need to spend at least two hours at home towards academics every day with complete concentration.</li>
+               </ol>
+
+            </div>
+
+
         </Card>
         <div className={`flex justify-center w-full`}>
             <div className='mt-4 border border-slate-400 p-4 rounded sm:max-w-3xl lg:max-w-full'>
