@@ -1,6 +1,4 @@
-// Dropdown.tsx
 import React, { useState, useEffect, useRef } from "react";
-import { Link } from "react-router-dom";
 
 interface DropdownProps {
     size: number;
@@ -13,8 +11,9 @@ interface DropdownProps {
 export const Dropdown: React.FC<DropdownProps> = ({ size, ButtonName, Buttons, Links, dropdownLink }) => {
     const [isOpen, setIsOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
-    const closeTimeoutRef = useRef<number | null>(null);
-    const [isHovered,setIsHovered] = useState(false);
+    const closeTimeoutRef = useRef<NodeJS.Timeout | null>(null); // Adjusted type here
+    const [isHovered, setIsHovered] = useState(false);
+
     useEffect(() => {
         const handleClickOutside = (event: MouseEvent) => {
             if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
@@ -28,23 +27,25 @@ export const Dropdown: React.FC<DropdownProps> = ({ size, ButtonName, Buttons, L
             document.removeEventListener("mousedown", handleClickOutside);
         };
     }, []);
+
     const handleMouseEnter = () => {
-        setIsHovered(true)
+        setIsHovered(true);
         setIsOpen(true);
-        if(closeTimeoutRef.current){
+        if (closeTimeoutRef.current) {
             clearTimeout(closeTimeoutRef.current);
         }
-    }
+    };
+
     const handleMouseLeave = () => {
-        setIsHovered(false)
+        setIsHovered(false);
         setIsOpen(false);
-        if(closeTimeoutRef.current){
+        if (closeTimeoutRef.current) {
             clearTimeout(closeTimeoutRef.current);
         }
         closeTimeoutRef.current = setTimeout(() => {
             setIsOpen(false);
         }, 5000);
-    }
+    };
 
     const toggleDropdown = () => {
         if (dropdownLink) {
@@ -57,23 +58,21 @@ export const Dropdown: React.FC<DropdownProps> = ({ size, ButtonName, Buttons, L
 
     return (
         <div className="group relative cursor-pointer" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-    <div className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-        <span className="menu-hover text-base font-medium text-white" onClick={toggleDropdown}>
-            {ButtonName}
-        </span>
+            <div className="border text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                <span className="menu-hover text-base font-medium text-white" onClick={toggleDropdown}>
+                    {ButtonName}
+                </span>
+            </div>
 
-    </div>
-
-    {(isOpen || isHovered) && (
-        <div className="absolute z-50 flex w-max flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible" ref={dropdownRef}>
-            {Buttons.slice(0, size).map((button, index) => (
-                <a key={index} href={Links[index]} className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
-                    {button}
-                </a>
-            ))}
+            {(isOpen || isHovered) && (
+                <div className="absolute z-50 flex w-max flex-col bg-gray-100 py-1 px-4 text-gray-800 shadow-xl group-hover:visible" ref={dropdownRef}>
+                    {Buttons.slice(0, size).map((button, index) => (
+                        <a key={index} href={Links[index]} className="my-2 block border-b border-gray-100 py-1 font-semibold text-gray-500 hover:text-black md:mx-2">
+                            {button}
+                        </a>
+                    ))}
+                </div>
+            )}
         </div>
-    )}
-</div>
-
     );
 };

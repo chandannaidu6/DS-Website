@@ -1,14 +1,9 @@
 import { Appbar } from "../components/Appbar"
 import Card from "../components/Card"
 import { Dropdown } from "../components/Dropdown"
-import { ImageSlider } from "../components/ImageSlider"
 import { Link } from "react-router-dom"
 export const Contact = () => {
-    const imageUrls = [
-        "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
-        "https://static.wixstatic.com/media/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg/v1/fill/w_722,h_469,al_c,lg_1,q_80,enc_auto/374af4_bc4e112406d04e33a406ea499d996572~mv2.jpg",
-       
-      ];
+
     return <div>
         <Card>
             <div className='flex flex-col justify-center'>

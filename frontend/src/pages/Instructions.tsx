@@ -1,7 +1,6 @@
 import { Appbar } from "../components/Appbar"
 import Card from "../components/Card"
 import { Dropdown } from "../components/Dropdown"
-import { ImageSlider } from "../components/ImageSlider"
 import { Link } from "react-router-dom"
 export const Instructions = () => {
 
