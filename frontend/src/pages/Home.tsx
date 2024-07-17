@@ -73,7 +73,7 @@ export const Home = () => {
                 <Dropdown size={4} ButtonName="Staff Desk" Buttons={['Faculty and Staff list', 'Roles and Responsibilities', 'Enrichment of Skills', 'Faculty as Resource Persons']}   Links={['/stafflist', '/roles', 'https://www.example.com', 'https://www.example.com']} dropdownLink="/staffdesk" />
                 <Dropdown size={12} ButtonName="Student Desk" Buttons={['Instructions', 'Student Nominal Rolls','Student Achievements','Academic Toppers','Higher Education and BEC','Training and Placement','Placements','Student Clubs','CACHE','Learning Resources','Department Library','Grievances']}  Links={['/instructions', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Dropdown size={3} ButtonName="Research" Buttons={['Research and Consultancy Policy', 'Research Activities','Research Intiatives']}  Links={['/consultancy', '/act', '/initiatives']}></Dropdown>  
-                <Dropdown size={10} ButtonName="Academics" Buttons={['Regulations and Syllabus', 'Academic Calenders','Academic Activities Carried out','Industry-institute interaction','Major Products','Mini Projects','Internships','Industrial Visits','Professional Bodies','TechExpo']}  Links={['/syllabus', 'https://www.example.com', 'https://www.example.com', 'https://www.example.com','https://www.example.com','https://www.example.com','https://www.example.com','/industrial','https://www.example.com','https://www.example.com']} dropdownLink="/academics" ></Dropdown>  
+                <Dropdown size={10} ButtonName="Academics" Buttons={['Regulations and Syllabus', 'Academic Calenders','Academic Activities Carried out','Industry-institute interaction','Major Products','Mini Projects','Internships','Industrial Visits','Professional Bodies','TechExpo']}  Links={['/syllabus', 'https://www.example.com', 'https://www.example.com', 'https://www.example.com','https://www.example.com','https://www.example.com','/internships','/industrial','https://www.example.com','https://www.example.com']} dropdownLink="/academics" ></Dropdown>  
                 <Dropdown size={7} ButtonName="TLP" Buttons={['Work Load and Additional duties', 'Time tables', 'Result Analysis', 'Innovations in Teaching', 'Project Based Learning', 'Value Added Courses','Specialized Groups']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} dropdownLink="/tlp"></Dropdown>  
                 <Dropdown size={3} ButtonName="Labs" Buttons={['List of Laboratories', 'Software','Equipment Purchased']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
                 <Dropdown size={2} ButtonName="Centers of Excellence" Buttons={['VLSI Design', 'IOT and ES']}  Links={['www.google.com', 'www.google.com', 'www.google.com', 'www.google.com']} ></Dropdown>  
@@ -107,6 +107,22 @@ export const Home = () => {
             
             </div>
         </Appbar>
+        <Card>
+            <div>
+                <div className='text-2xl font-semibold pb-4'>
+                    Announcements
+                </div>
+                <div className='whitespace-nowrap' style={{ display: 'flex', alignItems: 'center' }}>
+                    <div className ='text-md font-semibold'>
+                        11/07: 
+                    </div>
+                    <div className='font-bold'>
+                        B.Tech 3.2 CBT Exam Fee Notification
+                    </div>
+                </div>
+
+            </div>
+        </Card>
         <Card>
             <ImageSlider />
             <div className='mt-2 flex justify-start justify-between'>
@@ -147,62 +163,24 @@ export const Home = () => {
                 </div>
             </div>
         </Card>
-        <Card>
-            <div className='grid grid-cols-2 gap-4'>
-                <div className='text-2xl font-semibold'>
-                    Announcements
-                </div>
-                <div className='text-2xl font-semibold'>
-                    Examination Notifications
-                </div>
-                <div className='text-2xl font-semibold'>
-                    Important Circulars and Notifications
-                </div>
-            </div>
-        </Card>
-        <div className={`flex justify-center w-full`}>
-            <div className='mt-4 border border-slate-400 p-4 rounded sm:max-w-3xl lg:max-w-full'>
-  
-            <div className='flex flex-col justify-center'>
-            <div className='flex justify-start justify-center'>
-                <div className='px-2'>
-                <img src="https://static.wixstatic.com/media/374af4_adaa6463205342eead87a7d02b4241a9~mv2.png/v1/fill/w_89,h_89,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/44_%20Geetanjali.png" alt=""  width="71" height="71"></img>
 
-                </div>
-                <div>
-                    <div className='font-bold text-4xl'>
-                        GEETHANJALI COLLEGE OF ENGINEERING AND TECHNOLOGY   
-                    </div>
-                    <div className='font-semibold flex justify-center'>
-                        (UGC Autonomous,  Permanently Affiliated to JNTUH, Accredited by NAAC with 'A+' grade)
-                    </div>
-                </div>
-                <div className='pt-12 font-bold text-md'>
-                EAMCET CODE - GCTC
+  <footer className="bg-gray-200 text-white py-6">
+    <div className="container mx-auto text-center">
+      <div className="mb-4">
+        <a href="https://www.instagram.com" className="mx-2 text-gray-400 hover:text-white">
+          <i className="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com" className="mx-2 text-gray-400 hover:text-white">
+          <i className="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.twitter.com" className="mx-2 text-gray-400 hover:text-white">
+          <i className="fab fa-twitter fa-2x"></i>
+        </a>
+      </div>
+      <p className="text-gray-400">&copy; 2024 Your Company. All rights reserved.</p>
+    </div>
+  </footer>
 
-                </div>
-            </div>
-            <div className='flex justify-center font-bold text-3xl'>
-            Department of Data Science(EA)        
-
-            </div>
-            <div className='font-semibold flex justify-center pb-2'>
-            (Accredited by NBA in 2012, 2015, 2018 and 2022)
-
-            </div>
-            <div className='font-semibold flex justify-center pb-2'>
-            Cheeryala(V), Keesara(M), Medchal (Dist.), Telangana, INDIA, Pin Code-501301.
-
- 
-
-            </div>
-
-            
-            </div>
-        </div>
- 
-
-        </div>
 
     </div>
 }
