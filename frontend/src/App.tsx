@@ -20,6 +20,7 @@ import { NSS } from './pages/NSS'
 import { Attainments } from './pages/Attainments'
 import { Instructions } from './pages/Instructions'
 import { Contact } from './pages/Contact'
+import { Internship } from './pages/Intership'
 
 function App() {
 
@@ -49,6 +50,7 @@ function App() {
         <Route path='/attainments' element={<Attainments />}/>
         <Route path='/instructions' element={<Instructions />}/>
         <Route path='/contact'element={<Contact />}/>
+        <Route path='/internship' element={<Internship />} />
 
 
 
