@@ -1,7 +1,5 @@
 import Card from "../components/Card";
 import { Appbar } from "../components/Appbar";
-import { Dropdown } from "../components/Dropdown";
-import { Link } from "react-router-dom";
 import { Upper } from "../components/Upper";
 import { Footer } from "../components/Footer";
 
